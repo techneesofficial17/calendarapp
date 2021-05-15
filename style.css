@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, "sans-serif";
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(120deg, royalblue, #7f00ff);
+    background-blend-mode: darken;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    position: relative;
+}
+
+.main:before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    box-shadow: 150px 200px white, -50px 100px #139ffd;
+    z-index: -1;
+}
+
+.box {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    width: 200px;
+    /*   height: 300px; */
+    box-sizing: border-box;
+    border-top: 20px solid royalblue;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 20px solid transparent;
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+}
+
+.box .month {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-family: Ubuntu;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: royalblue;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.box .day {
+    color: blue;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.box .numday {
+    color: black;
+    font-size: 90px;
+    font-weight: 900;
+    font-family: Poppins;
+}
+
+.box .year {
+    color: #000;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    background: royalblue;
+    width: 100%;
+}
+
+.calendar h3 {
+    font-size: 25px;
+    text-transform: capitalize;
+    position: absolute;
+    top: -40px;
+    font-weight: 900;
+}
+
+.calendar h3:before {
+    content: "";
+    width: 70px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 110%;
+}
+
+
+/* @media screen and (max-width: 1080px) {
+  
+  .main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+ */
+
+
+/* backdrop property will not support into the firefox and internet explorer and other some browsers  */
